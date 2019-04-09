@@ -1,0 +1,3 @@
+language: groovy
+bafore_install:
+      -chmod +x gradlew
