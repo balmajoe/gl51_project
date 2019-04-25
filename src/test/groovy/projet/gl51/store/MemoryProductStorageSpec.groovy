@@ -29,8 +29,8 @@ class MemoryProductStorageSpec extends Specification {
 		
 		where:
 		name | description | price | idealTemperature
-		"Ordi" | "Ordinateur" | 1500 | 10 
-		"Table" | "Grande table" | 2000 | 5 
+		"iphone" | "smartphone" | 1500 | 25 
+		"thunder" | "trotinette" | 5000 | 5 
     }
 	
 	void "deleting a product removes it from the list"() {
@@ -49,8 +49,8 @@ class MemoryProductStorageSpec extends Specification {
 		
 		where:
 		name | description | price | idealTemperature
-		"Ordi" | "Ordinateur" | 1500 | 10
-		"Table" | "Grande table" | 2000 | 5
+		"iphone" | "smartphone" | 1500 | 25
+		"thunder" | "trotinette" | 5000 | 5
 	}
 	
 	void "modifying a product changes it in the list"() {
@@ -67,8 +67,8 @@ class MemoryProductStorageSpec extends Specification {
 		
 		where:
 		name | description | price | idealTemperature | name1 | description1 | price1| idealTemperature1
-		"Ordi" | "Ordinateur" | 1500 | 10 | "Table" | "Grande table" | 2000 | 5	
-		"Table" | "Grande table" | 2000 | 5 | "Ordi" | "Ordinateur" | 1500 | 10	
+		"iphone" | "smartphone" | 1500 | 25 | "thunder" | "trotinette" | 5000 | 5	
+		"thunder" | "trotinette" | 5000 | 5 | "iphone" | "smartphone" | 1500 | 25	
 	}
 	
 	void "getting a product by its id returns it if it does exist"() {
@@ -84,8 +84,8 @@ class MemoryProductStorageSpec extends Specification {
 		
 		where:
 		name | description | price | idealTemperature
-		"Ordi" | "Ordinateur" | 1500 | 10
-		"Table" | "Grande table" | 2000 | 5
+		"iphone" | "smartphone" | 1500 | 25
+		"thunder" | "trotinette" | 5000 | 5
 	}
 	
 	void "getting a product by its id throws a NotExistingProductException if it does not exits"() {
@@ -102,7 +102,7 @@ class MemoryProductStorageSpec extends Specification {
 		
 		where:
 		name | description | price | idealTemperature
-		"Ordi" | "Ordinateur" | 1500 | 10
-		"Table" | "Grande table" | 2000 | 5
+		"iphone" | "smartphone" | 1500 | 25
+		"thunder" | "trotinette" | 5000 | 5
 	}
 }
